@@ -7,9 +7,9 @@
 
 # Site settings
 title: Nikhil NAD Haksar
-email: nhaksar@cs.uchicago.edu
+email: nhaksar@uchicago.edu
 description: > # this means to ignore newlines until "baseurl:"
-  Applied microeconomics; competition; industrial organization; firm dynamics.
+  Applied math and economics at UChicago
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://nhaksar.github.io" # the base hostname & protocol for your site
 twitter_username: NikhilHaksar
