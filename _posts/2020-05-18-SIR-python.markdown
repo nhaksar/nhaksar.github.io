@@ -7,7 +7,7 @@ categories: Python
 Python has a lot of useful stuff for numerically solving dynamic systems. Today, I show how to implement an SIR model in Python, and give a little background on how to code this kind of thing in general.
 
 ## Some background
-When we talk about the SIR model, we're generally referring to the mathematical model of disease spread first developed by [Kermack et al](doi:10.1098/rspa.1927.0118).
+When we talk about the SIR model, we're generally referring to the mathematical model of disease spread first developed by [Kermack et al](https://doi.org/10.1098/rspa.1927.0118).
 It provides a simple model for the spread of disease through a population where infected people gain immunity after being infected.
 The model itself is actually described using a system of differential equations; you can read more about it either in the original paper, or at [this link](https://mathworld.wolfram.com/Kermack-McKendrickModel.html).
 
