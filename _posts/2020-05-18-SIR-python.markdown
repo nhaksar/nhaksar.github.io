@@ -2,7 +2,7 @@
 layout: post
 title:  "Implementing SIR Model in Python"
 date:   2020-05-18 17:15:42 -0600
-categories: SIR Python Dynamic Modeling
+categories: Python
 ---
 Python has a lot of useful stuff for numerically solving dynamic systems. Today, I show how to implement an SIR model in Python, and give a little background on how to code this kind of thing in general.
 
@@ -24,7 +24,7 @@ NumPy is a generally useful package for doing fancy math; Pandas gives access to
 
 We normalize the size of the population N to 1, which means that S(t), I(t), and R(t) reflect the proportion of people who are susceptible, infected, or "removed" (i.e. recovered) in time t.
 
-Now, we need to create a function that wraps the system of ODEs so we can feed it into 'odeint'. 
+Now, we need to create a function that wraps the system of ODEs so we can feed it into 'odeint'.
 ```python
 # define the system of equations that give us our model
 # with N normalized to 1, so we have proportions
