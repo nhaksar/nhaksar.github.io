@@ -20,11 +20,11 @@ import pandas as pd
 from scipy.integrate import odeint
 import matplotlib.pyplot as plt
 ```
-NumPy is a generally useful package for doing fancy math; Pandas gives access to useful data structures and methods; SciPy is an extension of NumPy that has some specific methods we like, such as 'odeint' and 'fsolve'; and matplotlib is an extremely powerful library for plotting things.
+NumPy is a generally useful package for doing fancy math; Pandas gives access to useful data structures and methods; SciPy is an extension of NumPy that has some specific methods we like, such as `odeint` and `fsolve`; and matplotlib is an extremely powerful library for plotting things.
 
 We normalize the size of the population N to 1, which means that S(t), I(t), and R(t) reflect the proportion of people who are susceptible, infected, or "removed" (i.e. recovered) in time t.
 
-Now, we need to create a function that wraps the system of ODEs so we can feed it into 'odeint'.
+Now, we need to create a function that wraps the system of ODEs so we can feed it into `odeint`.
 ```python
 # define the system of equations that give us our model
 # with N normalized to 1, so we have proportions
@@ -49,7 +49,7 @@ def sir_system(state, t, beta, gamma):
 ```
 If you didn't read the articles above, this function here gives a very brief summary of the equations that govern the model. You might think of beta as a parameter that determines the rate of infection, while
 
-Having done that, we can make a function that feeds the system, as well as an initial state, a time length, and some parameters, into 'odeint'.
+Having done that, we can make a function that feeds the system, as well as an initial state, a time length, and some parameters, into `odeint`.
 ```python
 ## a function to return the values from integrating the system
 def integrate_SIR(init_state, t, beta, gamma):
@@ -367,4 +367,4 @@ plot_sir(init_state, 20, 1, 0.1)
 
 ![png](https://nhaksar.github.io/assets/2020-05-18/output_8_0.png)
 
-I hope that was useful!
+I hope that was useful! I might upload more things like this as I come across them.
