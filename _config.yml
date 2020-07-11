@@ -15,5 +15,9 @@ url: "https://nhaksar.github.io" # the base hostname & protocol for your site
 twitter_username: NikhilHaksar
 github_username:  nhaksar
 
+# Plugins
+plugins:
+        - jekyll-seo-tag
+
 # Build settings
 markdown: kramdown
