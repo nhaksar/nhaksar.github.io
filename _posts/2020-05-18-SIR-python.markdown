@@ -1,4 +1,4 @@
---
+---
 layout: post
 title:  "SIR Model Dynamics in Python"
 date:   2020-05-18 17:15:42 -0600
