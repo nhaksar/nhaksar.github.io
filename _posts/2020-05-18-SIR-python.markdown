@@ -1,10 +1,10 @@
----
+--
 layout: post
-title:  "Implementing SIR Model in Python"
+title:  "SIR Model Dynamics in Python"
 date:   2020-05-18 17:15:42 -0600
 categories: Python
 ---
-Python has a lot of useful stuff for numerically solving dynamic systems. Today, I show how to implement an SIR model in Python, and give a little background on how to code this kind of thing in general.
+Python has a lot of useful stuff for numerically solving dynamic systems. This article briefly explains the SIR model of disease spread as well as how to represent it / see its dynamics in Python, and give a little background on how to code this kind of thing in general.
 
 ## Some background
 When we talk about the SIR model, we're generally referring to the mathematical model of disease spread first developed by [Kermack et al](https://doi.org/10.1098/rspa.1927.0118).
@@ -367,4 +367,4 @@ plot_sir(init_state, 20, 1, 0.1)
 
 ![png](https://nhaksar.github.io/assets/2020-05-18/output_8_0.png)
 
-I hope that was useful! I might upload more things like this as I come across them.
+Next, I'll be working through some more complicated problems. In specific, I want to walkthrough replication of a recent COVID economics paper by the dream team at MIT. Until then!
